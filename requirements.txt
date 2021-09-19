@@ -6,7 +6,7 @@ chardet<5.0,>=2.0
 async-timeout<4.0,>=3.0
 multidict<7.0,>=4.5
 attrs>=17.3.0
-discord.py==2.0.0a0
+enhanced-dpy = "^1.7.3"
 cffi>=1.4.1
 pycparser
 idna>=2.0
