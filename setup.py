@@ -1,5 +1,9 @@
 import discord
 import tmdbsimple as tmdb
+import os
+
+my_secret1 = os.environ['clientid']
+tmdb.API_KEY = os.environ['tmdb.API_KEY']
 
 TRENDING_MEDIA_TYPE = 'movie'
 TRENDING_TIME_WINDOW = 'week'
@@ -49,4 +53,4 @@ async def on_message(message):
             embed.add_field(name="original language", value=c['original_language'])
             await message.channel.send(embed=embed)
 
-client.run(clientid)
+client.run(my_secret1)
